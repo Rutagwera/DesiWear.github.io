@@ -1,0 +1,130 @@
+h1{
+    font-size: 32px;
+    font-family: sans-serif;
+    color: antiquewhite;
+}
+
+h2{
+    font-size: 28px;
+    font-family: sans-serif;
+    color: antiquewhite;
+}
+
+h3{
+    font-size: 24px;
+    font-family: sans-serif;
+    color: antiquewhite;
+}
+
+h4{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rgb(220, 215, 250);
+}
+
+h5{
+    font-size: 16px;
+    font-family: sans-serif;
+    color: antiquewhite;
+}
+
+h6{
+    font-size: 12px;
+    font-family: sans-serif;
+    color: antiquewhite;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*padding: 20px 80px;*/
+    background-color:lightgray;
+    box-shadow: 0 5px 15px rgba(0, 0,0, 0.06);
+    z-index: 999;
+    position:sticky;
+    top: 0;
+    left:0;
+}
+
+
+#navibar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navibar li{
+    list-style: none;
+    margin-right: 20px;
+    padding: 0, 20px;
+    position: relative;
+}
+
+#navibar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 800;
+    color: slategrey;
+}
+
+#navibar li a:hover,
+#navibar li a.active
+{
+
+    color: darkgreen;
+
+}
+
+#navibar li a.active::after,
+#navibar li a:hover::after{
+    content: "";
+    width: 30px;
+    height: 2px;
+    background: darkgreen;
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+}
+
+/*homepage*/
+
+#feature{
+    background-image: url("img/mainImage.jpg");
+    height: 90vh;
+    width:auto;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#feature button{
+    background-image: url("img/shopbutton.jpg");
+    background-color: transparent;
+    background-size: cover;
+    width: 200px;
+    height: 83px;
+    border: 0;
+    cursor: pointer;
+}
+
+.amexlogo{
+    float:right;
+}
+
+.mscardalogo{
+    float:right;
+}
+
+.visalogo{
+    float:right;
+}
+
+.footer{
+    text-align: center;
+}
